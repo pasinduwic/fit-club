@@ -1,0 +1,90 @@
+.join {
+  display: flex;
+  gap: 200px;
+  padding: 20px 40px;
+  justify-content: space-between;
+  /* max-width: 1600px;
+  align-self: center; */
+}
+
+.left-j {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.left-j > hr {
+  position: absolute;
+  width: 210px;
+  border: 2px solid var(--orange);
+  border-radius: 20%;
+  margin: -10px 0;
+  /* top: -40px; */
+}
+
+.right-j {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.email-container {
+  display: flex;
+  gap: 60px;
+  background-color: gray;
+  padding: 20px 40px;
+}
+
+.email-container > input {
+  background-color: transparent;
+  border: none;
+  color: var(--lightgray);
+  outline: none;
+}
+
+::placeholder {
+  color: var(--lightgray);
+}
+
+.btn-j {
+  background-color: var(--orange);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .left-j {
+    flex-direction: column;
+    font-size: 2.5rem;
+  }
+
+  .left-j > div {
+    padding: 16px 0;
+  }
+
+  .email-container {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .right-j {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .join {
+    gap: 0;
+  }
+
+  .email-container {
+    gap: 0;
+  }
+}

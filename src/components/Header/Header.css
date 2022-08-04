@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.log {
+  width: 3rem;
+  height: 3rem;
+}
+
+.header-manu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  color: white;
+}
+
+.header-manu > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .logo {
+    width: 200px;
+  }
+
+  .header-manu {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 40px;
+    z-index: 99;
+  }
+
+  .header-manu {
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 40px;
+  }
+}

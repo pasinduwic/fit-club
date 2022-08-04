@@ -1,0 +1,132 @@
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-top: -80px;
+  gap: 80px;
+  position: relative;
+}
+
+.plan-header {
+  display: flex;
+  gap: 40px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.plan {
+  background: var(--caloryCard);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 40px;
+  width: 300px;
+}
+
+.plan:nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+
+.plan > svg {
+  fill: var(--orange);
+  width: 40px;
+  height: 40px;
+}
+
+.plan > :nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.plan > :nth-child(3) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.plan > :nth-child(5) {
+  font-size: 0.8rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature > img {
+  width: 20px;
+}
+
+.plan:nth-child(2) > svg {
+  fill: white;
+}
+
+.plan:nth-child(2) > button {
+  color: var(--orange);
+}
+
+.blur-p-1 {
+  width: 640px;
+  height: 460px;
+  top: 120px;
+  left: 0;
+}
+
+.blur-p-2 {
+  width: 640px;
+  height: 460px;
+  top: 120px;
+  right: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .plan-header {
+    font-size: 1.8rem;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plan-header {
+    flex-direction: column;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .plans {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .plan {
+    padding: 20px 0;
+  }
+
+  .plan:nth-child(2) {
+    background: var(--planCard);
+    transform: scale(1);
+  }
+}
